@@ -15,7 +15,7 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//input[@tabindex='5']")
     private WebElement btnLogin;
 
-    public void login(String username, String password) throws NullPointerException {
+    protected void login(String username, String password) throws NullPointerException {
         inputLogin.sendKeys(username);
         inputPassword.sendKeys(password);
         btnLogin.click();
